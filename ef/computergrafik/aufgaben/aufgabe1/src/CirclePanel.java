@@ -30,13 +30,16 @@ public class CirclePanel extends JPanel {
     */
     public static void DrawCircle(Graphics2D graph)
     {
-        // draw the black square
-        Rectangle2D rect = new Rectangle2D.Double(0, 0, width / 2.0, height / 2.0);
+        // Aufgabe: Erstellen Sie ein Rectangle2D an der Koordinate (0,0) mit der Breite width und der Höhe height.
+        Rectangle2D rect = new ???;
+
         graph.setPaint(Color.BLACK);
         graph.fill(rect);
 
-        // draw the white circle
-        Ellipse2D circle = new Ellipse2D.Double(-width / 2.0, -height / 2.0, width, height);
+        // Aufgabe: Erstellen Sie eine Ellipse2D mit dem Zentrum (0,0) und einer umgebenden Hülle
+        // mit der Länge width und der Höhe height.
+        Ellipse2D circle = new ???;;
+
         graph.setStroke(new BasicStroke(1f));
         graph.setPaint(Color.WHITE);
         graph.draw(circle);
