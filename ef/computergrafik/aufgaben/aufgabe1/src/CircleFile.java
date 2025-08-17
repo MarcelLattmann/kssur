@@ -8,7 +8,10 @@ import java.io.IOException;
 public class CircleFile {
 
     public static void main(String[] args) {
-        BufferedImage image = new BufferedImage(256, 256, BufferedImage.TYPE_BYTE_GRAY);
+		int width = 256;
+        int height = 256;
+		
+        BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_BYTE_GRAY);
 
         Graphics2D graph = image.createGraphics();
         /*
@@ -21,7 +24,7 @@ public class CircleFile {
         Ellipse2D circle = new ???;
         graph.draw(circle);
         try {
-            File outputfile = new File("circle.bmp");
+            File outputfile = new File("shape.bmp");
             ImageIO.write(image, "bmp", outputfile);
         } catch (IOException e) {
             System.out.println(e.toString());
