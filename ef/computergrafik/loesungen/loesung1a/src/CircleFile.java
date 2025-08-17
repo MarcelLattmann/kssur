@@ -11,14 +11,7 @@ public class CircleFile {
         BufferedImage image = new BufferedImage(256, 256, BufferedImage.TYPE_BYTE_GRAY);
 
         Graphics2D graph = image.createGraphics();
-        /*
-            Aufgabe: Erstellen Sie eine Ellipse2D mit dem Nullpunkt in (0,0) und einem Radius von 255.
-            Vorsicht: Der Konstruktor verlangt die Daten des umschliessenden Quadrats.
-
-            Der Hintergrund ist automatisch schwarz und die Kreisfarbe weiss. Da das Image in Zeile 11
-            als Grayscale definiert wurde, kann man das auch nicht ändern.
-        */
-        Ellipse2D circle = new ???;
+        Ellipse2D circle = new Ellipse2D.Double(-255,-255, 510, 510);
         graph.draw(circle);
         try {
             File outputfile = new File("circle.bmp");
